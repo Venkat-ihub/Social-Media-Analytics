@@ -4,9 +4,9 @@ import json
 def getCreds() :
 
 	creds = dict() # dictionary to hold everything
-	creds['access_token'] = 'EAAkIrqqRsBIBOxpSaZBr7RakwK7ItMWqbtBGAk0I3oFyUkJmqclYIV0c1ZBNaePrqdNOxCmgDZADWNGCZAJkbRvmmeaquUvV9eNBpPHFqnxNgxKQ44SUCWeq2dlL1BPZA1ZCadiibr4TvJSjS63vxn4mCZCTEQPTsz1GcKasw0AZB0hBcdeRtdAd6AG0xS4ZCZB2bUzWcrSYSFn7TBnZABtL3jivMAZD' # access token for use with all api calls
-	creds['client_id'] = '2542821069402130' # client id from facebook app IG Graph API Test
-	creds['client_secret'] = '3721076aac1c644382b0e9ee614eb9b9' # client secret from facebook app
+	creds['access_token'] = '' # access token for use with all api calls
+	creds['client_id'] = '' # client id from facebook app IG Graph API Test
+	creds['client_secret'] = '' # client secret from facebook app
 	creds['graph_domain'] = 'https://graph.facebook.com/' # base domain for api calls
 	creds['graph_version'] = 'v7.0' # version of the api we are hitting
 	creds['endpoint_base'] = creds['graph_domain'] + creds['graph_version'] + '/' # base endpoint with domain and version
