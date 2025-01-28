@@ -1,0 +1,19 @@
+<!-- my_app/templates/my_app/post_result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Results</title>
+</head>
+<body>
+    <h2>Job Post: {{ job_post.title }}</h2>
+    <p>Description: {{ job_post.description }}</p>
+
+    <h3>Post Results</h3>
+    <ul>
+        <li>Facebook: {% if success.facebook %}Success{% else %}Failed{% endif %}</li>
+        <li>Instagram: {% if success.instagram %}Success{% else %}Failed{% endif %}</li>
+        <li>LinkedIn: {% if success.linkedin %}Success{% else %}Failed{% endif %}</li>
+    </ul>
+</body>
+</html>

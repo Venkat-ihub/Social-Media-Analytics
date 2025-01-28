@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting App</title>
+</head>
+<body>
+    <h1>Job Posting Application</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="job_description">Job Description:</label><br>
+        <textarea name="job_description" id="job_description" rows="5" cols="50"></textarea><br><br>
+
+        <label for="media">Upload Media:</label>
+        <input type="file" name="media" id="media"><br><br>
+
+        <button type="submit" name="platform" value="linkedin">Post to LinkedIn</button>
+        <button type="submit" name="platform" value="facebook">Post to Facebook</button>
+        <button type="submit" name="platform" value="instagram">Post to Instagram</button>
+        <button type="submit" name="post_all" value="true">Post to All</button>
+    </form>
+</body>
+</html>
